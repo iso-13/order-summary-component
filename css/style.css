@@ -1,0 +1,131 @@
+:root {
+--clr-Pale-blue: hsl(225, 100%, 94%);
+--clr-Bright-blue: hsl(245, 75%, 52%);
+--clr-Very-pale-blue: hsl(225, 100%, 98%);
+--clr-Desaturated-blue: hsl(224, 23%, 55%);
+--clr-Dark-blue: hsl(223, 47%, 23%);
+
+--ff: 'Red Hat Display', sans-serif;
+--fw-light: 500;
+--fw-reg: 700;
+--fw-bold:900;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff);
+    background-color: var(--clr-Pale-blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+main {
+    background-color: white;
+    max-width: 340px;
+    border-radius: 1rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.description {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--clr-Dark-blue);
+    font-size: 1.75rem;
+}
+
+p {
+    text-align: center;
+    color: var(--clr-Desaturated-blue);
+    line-height: 30px;
+    font-size: 16px;
+    padding: 0 18px;
+}
+
+@media (min-width: 376px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(225deg 100% 94% / 35%);
+    border-radius: 0.5rem;
+}
+
+.music-icon {
+    background-color: var(--clr-Pale-blue);
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--clr-Desaturated-blue);
+}
+
+h3 {
+    color: var(--clr-Dark-blue);
+}
+
+a {
+    color: var(--clr-Bright-blue);
+    font-family: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--clr-Desaturated-blue);
+}
+.proceed-btn {
+    background-color: var(--clr-Bright-blue);
+    border: transparent;
+    border-radius: 0.5rem;
+    color: var(--clr-Very-pale-blue);
+    height: 40px;
+    font-family: inherit;
+    box-shadow: 0 10px 10px rgb(189, 179, 179);
+    transition: 0.3s linear;
+}
+
+.proceed-btn:hover {
+    cursor: pointer;
+    background-color: var(--clr-Desaturated-blue);
+}
+
+.cancel-btn {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    color: var(--clr-Desaturated-blue);
+    font-weight: var(--fw-bold);
+    transition: 0.3s ease-in-out;
+    height: 30px;
+}
+
+.cancel-btn:hover {
+    cursor: pointer;
+    color: var(--clr-Dark-blue);
+    font-weight: var(--fw-bold);
+}
+
+
+
